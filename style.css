@@ -1,0 +1,38 @@
+/* styles */
+
+nav {
+  flex: 1 1 35%;
+  background: lightcyan;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+}
+
+
+/* mobile layout */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet*/
+@media (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  nav{
+    justify-content: flex-start;
+  }
+}
+
